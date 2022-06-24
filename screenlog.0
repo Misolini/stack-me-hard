@@ -1,0 +1,12 @@
+lls[?2004l
+CHANGELOG.md			dist				screenlog.0			tsconfig.json
+README.md			node_modules			screenlog.1			vsc-extension-quickstart.md
+cat				package-lock.json		screenlog.2			webpack.config.js
+crash.py			package.json			src				xargs
+[1m[3m%[23m[1m[0m                                                                                                                                     [0m[23m[24m[Jmis@Mathiass-MacBook-Air-2 stack-me-hard % [K[?2004hrrm screenlog.*[?2004l
+[1m[3m%[23m[1m[0m                                                                                                                                     [0m[23m[24m[Jmis@Mathiass-MacBook-Air-2 stack-me-hard % [K[?2004hlls[?2004l
+CHANGELOG.md			dist				screenlog.0			webpack.config.js
+README.md			node_modules			src				xargs
+cat				package-lock.json		tsconfig.json
+crash.py			package.json			vsc-extension-quickstart.md
+[1m[3m%[23m[1m[0m                                                                                                                                     [0m[23m[24m[Jmis@Mathiass-MacBook-Air-2 stack-me-hard % [K[?2004heexit;[?2004l

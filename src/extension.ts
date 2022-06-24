@@ -17,7 +17,29 @@ export function activate(context: vscode.ExtensionContext) {
     () => {
       // The code you place here will be executed every time your command is executed
       // Display a message box to the user
-      vscode.window.showInformationMessage("We forget to drink!");
+      //   vscode.window.showWarningMessage("We forget to drink!");
+
+      const cp = require("child_process");
+
+      cp.exec("cd ~/Desktop; ls", (err: any, stdout: any, stderr: any) => {
+        console.log("stdout: " + stdout);
+        console.log("stderr: " + stderr);
+        vscode.window.showInformationMessage(
+          JSON.stringify(JSON.stringify(stdout))
+        );
+      });
+
+      vscode.window.activeTerminal?.sendText(
+        "exit; cat `ls screenlog.* | head -n 1`"
+      );
+      //   vscode.window.activeTextEditor?.insertSnippet(
+      //     new vscode.SnippetString("echo 1")
+      //   );
+      //   vscode.env.openExternal("https://vg.no");
+
+      const messageFromTerminal = vscode.window.activeTerminal;
+      //   vscode.window.showInformationMessage(JSON.stringify(messageFromTerminal));
+      //   vscode.window.activeTextEditor
     }
   );
 
